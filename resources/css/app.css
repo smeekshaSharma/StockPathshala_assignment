@@ -1,0 +1,34 @@
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+.shimmer {
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: shimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 1000px 100%;
+    position: relative;
+}
+
+.shimmer-text {
+    height: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.shimmer-image {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
